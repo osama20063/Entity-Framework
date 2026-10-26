@@ -38,18 +38,43 @@
 
 
             #region AppDbContext
-//            using Microsoft.EntityFrameworkCore;
+            //            using Microsoft.EntityFrameworkCore;
 
-//public class BookstoreDbContext : DbContext
+            //public class BookstoreDbContext : DbContext
+            //        {
+            //            public DbSet<Book> Books { get; set; }
+            //            public DbSet<Author> Authors { get; set; }
+            //            public DbSet<Category> Categories { get; set; }
+
+            //            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            //            {
+
+            //                optionsBuilder.UseSqlServer("Server=.;Database=ReadMoreBooksDb;Trusted_Connection=True;TrustServerCertificate=True;");
+            //            }
+            //        }
+            #endregion
+
+
+            #region Program
+//            using System;
+
+//class Program
 //        {
-//            public DbSet<Book> Books { get; set; }
-//            public DbSet<Author> Authors { get; set; }
-//            public DbSet<Category> Categories { get; set; }
-
-//            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//            static void Main(string[] args)
 //            {
+//                using var context = new BookstoreDbContext();
+
                
-//                optionsBuilder.UseSqlServer("Server=.;Database=ReadMoreBooksDb;Trusted_Connection=True;TrustServerCertificate=True;");
+//                bool created = context.Database.EnsureCreated();
+
+//                if (created)
+//                {
+//                    Console.WriteLine("Database 'ReadMoreBooksDb' has been created successfully using EF Core Conventions!");
+//                }
+//                else
+//                {
+//                    Console.WriteLine("Database already exists.");
+//                }
 //            }
 //        }
             #endregion
